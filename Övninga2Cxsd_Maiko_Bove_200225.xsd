@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			xmlns:xbe="http://www.ocellus.se/XML" 
+			targetNamespace="http://www.ocellus.se/XML" 
+			elementFormDefault="qualified">
+	
+	<xsd:complexType name="bookloans">
+		<xsd:sequence>
+				<xsd:element name="name" type="xsd:string"/>
+				<xsd:element name="book" type="xbe:book" minOccurs="2" maxOccurs="4"/>
+ 		</xsd:sequence>
+	</xsd:complexType>		
+
+	<xsd:complexType name="book">
+		<xsd:sequence>
+	  		<xsd:element name="author" type="xsd:string"/>
+	   		<xsd:element name="title" type="xsd:string"/>		
+			<xsd:element name="pubYear" type="xsd:gYear"/>
+		</xsd:sequence>
+	</xsd:complexType>		
+	
+	<xsd:element name="loans" type="xbe:bookloans"/>
+	
+</xsd:schema>
+

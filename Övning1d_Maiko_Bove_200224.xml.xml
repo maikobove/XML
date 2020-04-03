@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding = "ISO-8859-1"?>
+<pf:database xmlns:pf="http:www.ocellus-mb.se/xml/">
+	<pf:heroes>
+		<pf:name gender="female" age="10">Pippilotta Longstump</pf:name>
+		<pf:name gender="male">SpiderMan</pf:name>
+		<pf:name gender="male" age= "300">Fantomen</pf:name>
+	</pf:heroes>
+	<pf:books>
+		<pf:comicbook title="X-Men" />
+		<pf:book title="XML genom exempel" />
+	</pf:books>
+</pf:database>

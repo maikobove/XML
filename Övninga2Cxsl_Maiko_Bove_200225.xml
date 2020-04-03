@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<loans xmlns="http://www.ocellus.se/XML"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.ocellus.se/XML Övninga2c.xsd">
+	
+	<name>Student1</name>
+	<book>
+		<author>Adam</author>
+		<title>Adams Diary</title> 
+		<pubYear>2004</pubYear>
+    </book>	
+    	
+	<book>
+		<author>Ida</author>
+	    <title>Idas CookBook</title>
+    	<pubYear>2011</pubYear>   	
+    </book>	
+    	
+	<book>
+		<author>Pelle</author>
+		<title>Pelles Garden</title>
+		<pubYear>1998</pubYear>    
+	</book>
+
+</loans>

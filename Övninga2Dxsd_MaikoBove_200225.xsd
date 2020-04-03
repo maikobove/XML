@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		   xmlns:xde="http://www.ocellus.se/xml"           
+           targetNamespace="http://www.ocellus.se/xml" 
+		   elementFormDefault="qualified">	
+		   
+	<xs:element name="circle" type="xde:dimensions"/>
+
+	<xs:complexType name="dimensions" mixed="true">
+	  		<xs:attribute name="color" type="xde:color" use="required" />
+	   		<xs:attribute name="radius" type="xde:radius" use="required"/>		
+			<xs:attribute name="unit" type="xde:unit" use="required"/>
+		    <xs:attribute name="filled" type="xs:boolean" use="required"/>		
+	</xs:complexType>
+	
+	<xs:simpleType name="color">
+		<xs:restriction base="xs:string">
+	  		<xs:enumeration value="red"/>
+	  		<xs:enumeration value="blue"/>
+	  		<xs:enumeration value="green"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	
+	<xs:simpleType name="radius">
+		<xs:restriction base="xs:integer">
+	  		<xs:minInclusive value="1"/>
+	  		<xs:maxInclusive value="100"/>	  		
+		</xs:restriction>
+	</xs:simpleType>	
+	
+	<xs:simpleType name="unit">
+		<xs:restriction base="xs:string">
+	  		<xs:enumeration value="pt"/>
+	  		<xs:enumeration value="mm"/>
+	  		<xs:enumeration value="cm"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	
+</xs:schema>
+
