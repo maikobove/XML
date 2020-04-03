@@ -1,4 +1,4 @@
-# XML_XSD_XSLT_KML_GML
+# XML_XSD_XSLT and KML_GML
 XML(Extensible Markup Language) 
 XSD (XML Schema Definition Describes the structure of a XML document) 
 XSLT (Extensible Stylesheet Language Transformations. Transforming XML documents into other documents)
